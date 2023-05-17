@@ -178,7 +178,7 @@ const resume = () => {
             <span className="px-2">|</span>Lahore, PK
           </p>
           <p className="py-1 italic">
-            Code Commerce - Youtube Channel (2020 - Current)
+            TA - Dr Junaid Haroon Siddiqui (June-2021 - July-2021)
           </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
