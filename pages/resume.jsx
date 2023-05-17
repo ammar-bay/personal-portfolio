@@ -1,8 +1,13 @@
 import React from "react";
 import Head from "next/head";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaDownload } from "react-icons/fa";
 
 const resume = () => {
+  const handleDownload = () => {
+    // Logic to handle the file download goes here
+    const fileUrl = `http://localhost:3000/resume.pdf`; // Replace with the actual file URL
+    window.open(fileUrl, "_blank");
+  };
   return (
     <>
       <Head>
@@ -19,6 +24,9 @@ const resume = () => {
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
           <h2 className="text-center">M. Ammar Ibrahim</h2>
           <div className="flex">
+            <a href="#" onClick={handleDownload}>
+              <FaDownload size={20} style={{ marginRight: "1rem" }} />
+            </a>
             <a
               href="https://www.linkedin.com/in/m-ammar-ibrahim/"
               target="_blank"
